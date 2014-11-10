@@ -17,7 +17,7 @@ setup(
     license='Public Domain',
     author='Arto Bendiken',
     author_email='arto@bendiken.net',
-    description='Sphinx ``c:header`` directive',
+    description='Sphinx c:header directive',
     long_description=long_desc,
     zip_safe=False,
     classifiers=[
