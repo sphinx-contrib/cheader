@@ -2,16 +2,17 @@
 
 from setuptools import setup, find_packages
 
-long_desc = '''
-This Sphinx extension provides the missing ``c:header`` directive for
-Sphinx's built-in C domain.
-'''
+with open('VERSION', 'r') as version_file:
+    version = version_file.read().rstrip()
+
+with open('README.rst', 'r') as readme_file:
+    long_desc = readme_file.read()
 
 requires = ['Sphinx >= 1.0']
 
 setup(
     name='sphinxcontrib-cheader',
-    version='1.0.0',
+    version=version,
     url='http://bitbucket.org/birkenfeld/sphinx-contrib',
     download_url='http://pypi.python.org/pypi/sphinxcontrib-cheader',
     license='Public Domain',
